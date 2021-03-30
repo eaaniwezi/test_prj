@@ -8,12 +8,12 @@ abstract class BaseItemsProvider extends ChangeNotifier {
     _runAutoUpdates();
   }
 
-  Timer _timer;
+  Timer? _timer;
   List<String> _items = const [];
 
   int get itemsCount => _items.length;
 
-  String itemAt(int index) {
+  String? itemAt(int index) {
     if (index >= 0 && index < itemsCount) return _items[index];
 
     return null;

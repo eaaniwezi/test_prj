@@ -6,7 +6,7 @@ import 'screen_1.dart';
 import 'screen_2.dart';
 
 class Screen0 extends StatelessWidget {
-  const Screen0({Key key}) : super(key: key);
+  const Screen0({Key? key}) : super(key: key);
 
   static const routeName = '/';
 
@@ -31,9 +31,9 @@ class Screen0 extends StatelessWidget {
 
 class _Button extends StatelessWidget {
   const _Button({
-    Key key,
-    @required this.title,
-    @required this.onTap,
+    Key? key,
+    required this.title,
+    required this.onTap,
   }) : super(key: key);
 
   final String title;

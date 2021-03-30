@@ -6,7 +6,7 @@ import 'screens/screen_1.dart';
 import 'screens/screen_2.dart';
 
 class App extends StatelessWidget {
-  const App({Key key}) : super(key: key);
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) => WidgetsApp(
